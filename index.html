@@ -7,6 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <script src="layout/styles/map.js"></script>
+
 </head>
 <body id="top">
 
@@ -24,7 +26,7 @@
       <nav id="mainav" class="fl_right"> 
 
         <ul class="clear">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#activities">Activities</a></li>
           <li><a href="#events">Events</a></li>
@@ -85,7 +87,7 @@
     </section>
       <hr class="btmspace-80">
       <section class="group">
-      <div class="one_half first"><img class="inspace-15 borderedbox" src="images/demo/logo1.png" alt=""></div>
+      <div class="one_half first"><img  src="images/demo/logo1.png" alt=""></div>
       <div class="one_half">
         <ul class="nospace group inspace-15">
           <li class="one_half first btmspace-50">
@@ -115,6 +117,8 @@
         </ul>
       </div>
     </section>
+    <hr class="btmspace-80">
+
       <!-- / main body -->
     <div class="clear"></div>
   </main>
@@ -138,38 +142,6 @@
     </ul>
     </figure>
   </section>
-</div>
-
-
-
-<div class="wrapper row2">
-  <div class="hoc container clear"> 
-      <div class="sectiontitle">
-      <p class="heading underline font-x2">Our Team</p>
-    </div>
-    <ul class="nospace group team">
-      <li class="one_quarter first">
-        <figure><a class="imgover"><img src="images/demo/benfranklin.png" alt=""></a>
-          <figcaption><strong>Ben Franklin</strong> <em>President</em></figcaption>
-        </figure>
-      </li>
-      <li class="one_quarter">
-        <figure><a class="imgover"><img src="images/demo/thomasjefferson.png" alt=""></a>
-          <figcaption><strong>Thomas Jefferson</strong> <em>Vice President</em></figcaption>
-        </figure>
-      </li>
-      <li class="one_quarter">
-        <figure><a class="imgover"><img src="images/demo/georgewashington.jpg" alt=""></a>
-          <figcaption><strong>George Washington</strong> <em>Secretary</em></figcaption>
-        </figure>
-      </li>
-      <li class="one_quarter">
-        <figure><a class="imgover"><img src="images/demo/alexanderhamilton.png" alt=""></a>
-          <figcaption><strong>Alexander Hamilton</strong> <em>Human Resourcecs</em></figcaption>
-        </figure>
-      </li>
-    </ul>
-    </div>
 </div>
 
 
@@ -227,10 +199,13 @@
     </section>
 </div>
 
+<div class="wrapper row2">
+  <div class="hoc container clear"> 
+      <div class="sectiontitle">
+      <p class="heading underline font-x2">Contact</p>
+    </div>
 
-
-<div class="wrapper coloured">
-  <section id="ctdetails" class="hoc clear"> 
+    <section id="ctdetails" class="hoc clear"> 
       <ul class="nospace clear">
       <li class="one_quarter first">
         <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span></div>
@@ -246,6 +221,20 @@
       </li>
     </ul>
     </section>
+
+    <div id="map"></div>
+
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+        async
+      ></script>
+    </div>
+</div>
+
+
+<div class="wrapper coloured">
+ 
 </div>
 
 <div class="wrapper row5">
@@ -254,6 +243,7 @@
     </div>
 </div>
 
+  
 
 
 <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
@@ -261,5 +251,6 @@
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
+
 </body>
 </html>
