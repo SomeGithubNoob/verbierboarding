@@ -14,8 +14,13 @@ File: Layout CSS
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* Additional styles
+--------------------------------------------------------------------------------------------------------------- */
 html{scroll-behavior: smooth;}
-
+.row2 p.heading.underline.font-x2{color: white;}
+.block.clear p {color: white;}
+.one_half.first img{padding-top: 50px;}
+ul.nospace.group.inspace-15 {padding-bottom: 80px;}
 
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
@@ -167,7 +172,7 @@ html{scroll-behavior: smooth;}
 
 /* Contact Details
 --------------------------------------------------------------------------------------------------------------- */
-#ctdetails{padding:50px 0;}
+#ctdetails{ padding: 50px; padding-top: 0px;}
 #ctdetails ul{}
 #ctdetails ul li{}
 #ctdetails ul li div{position:relative; min-height:45px; padding:0 0 0 60px; line-height:1;}
