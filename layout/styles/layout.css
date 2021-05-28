@@ -13,7 +13,6 @@ File: Layout CSS
 @import url("framework.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 /* Additional styles
 --------------------------------------------------------------------------------------------------------------- */
 html{scroll-behavior: smooth;}
@@ -320,7 +319,7 @@ td{border-width:0 1px;}
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
 body{color:#A5A6AA; background-color:#161C21;}
-a{color:#B946AD;}
+a{color:#be4747;}
 a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
